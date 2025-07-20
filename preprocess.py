@@ -81,7 +81,7 @@ def processar_arquivo(caminho_arquivo, pasta_saida):
 # caminhos de entrada e saida
 pasta_entrada = r"C:\Users\gu1lh\Desktop\projetonuven\entrada"
 pasta_saida = r"C:\Users\gu1lh\Desktop\projetonuven\saida"
-    
+
 # rodar em todos os arquivos da entrada
 if __name__ == "__main__":
     arquivos = os.listdir(pasta_entrada)
