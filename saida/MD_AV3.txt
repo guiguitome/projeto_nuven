@@ -1,0 +1,41 @@
+N
+tã INSTITUTO FEDERAL
+g MB CEARÁ
+
+M Campis Foctaleza
+
+Avaliação Parcial 3 ªª?, 5
+
+' - ?
+AEN
+
+Curso: Bacharelado em Engenharia da Computação
+Discip.lina:. Matemática Discreta
+
+Professor: Sebastião Pontes Mascarenhas
+Semestre: 2022.2
+
+Aluno (a):
+
+ª 01. Considere a função f: IR (1) > R— (3) que associa a cada valor
+
+/
+
+x em seu domínio ao número y em seu contridomínio, definida
+pela expressão
+
+= f( = 3x7 +1
+
+—1
+Mostre que a função f (x)'é bijevti.va.
+
+/
+| —
+Tmine 6 AOominio, & E“(Trí'r"“ucm'mno E G EXpressao Ua Tfumção — ——
+A "j" T;_““"' - Jnversa f 1(x)
+
+.S' [2 3 4 5 6,7,8,13,14,15,] 16,17,18 19] Mostre que — se
+seílecronarmos oito elementos distintos no conjuntoS, sempre
+
+, - 'exrgt:ra pkezlp menos dois desses elementos selecnonados Cuja soma
+1,_,, ent?e eles Será 21.
