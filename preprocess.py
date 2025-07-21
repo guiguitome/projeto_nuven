@@ -13,8 +13,6 @@ import cv2
 # configuração do tesseract 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-# ****FUNÇÕES****
-
 # preprocessar a imagem
 def preprocess_imagem(image):
     img = image.convert('L')

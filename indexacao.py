@@ -9,7 +9,7 @@ pasta_txt = r"C:\Users\gu1lh\Desktop\projetonuven\saida"
 # pasta onde será salvo os chunks
 pasta_chunks = r"C:\Users\gu1lh\Desktop\projetonuven\chunks"
 
-# para o embeddings:
+# para os embeddings:
 modelo = SentenceTransformer('all-MiniLM-L6-v2')
 
 # função das chunks
