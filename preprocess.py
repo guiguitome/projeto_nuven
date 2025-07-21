@@ -3,7 +3,8 @@ import os
 import fitz
 import pytesseract
 from pdf2image import convert_from_path
-from PIL import Image
+from PIL import Image, ImageFilter
+import numpy as np
 
 # ****FUNÇÕES****
 
@@ -25,20 +26,28 @@ def extrair_texto_pdf_imagem(caminho_pdf):
     for imagem in imagens:
         # preprocessamento
         imagem = imagem.convert("L")
-        imagem = imagem.point(lambda x: 0 if x < 150 else 255)
+        imagem = imagem.filter(ImageFilter.SHARPEN)
+        imagem = imagem.point(lambda x: 0 if x < 160 else 255)
+        largura, altura = imagem.size
+        imagem = imagem.resize((largura * 2, altura * 2))
+        imagem = imagem.filter(ImageFilter.MedianFilter(size=3))
 
-        texto += pytesseract.image_to_string(imagem, lang='por')
+        texto += pytesseract.image_to_string(imagem, lang='por', config='--psm 6')
 
     return texto.strip()
 
 # extrair texto de imagens
 def extrair_texto_imagem(caminho_imagem):
-    #preprocessamento
     imagem = Image.open(caminho_imagem).convert("L")
-    imagem = imagem.point(lambda x: 0 if x < 150 else 255)
 
-    texto = pytesseract.image_to_string(imagem, lang='por')
     
+    imagem = imagem.filter(ImageFilter.SHARPEN)
+    largura, altura = imagem.size
+    imagem = imagem.resize((largura * 2, altura * 2))
+    imagem = imagem.point(lambda x: 0 if x < 160 else 255)
+
+    texto = pytesseract.image_to_string(imagem, lang='por', config='--oem 3 --psm 4')
+
     return texto.strip()
 
 # salvar o texto extraido em .txt
@@ -67,7 +76,7 @@ def processar_arquivo(caminho_arquivo, pasta_saida):
         else:
             texto = extrair_texto_pdf_imagem(caminho_arquivo)
     
-    elif caminho_arquivo.lower().endswith((".png", ".jpg", ".jpeg")):
+    elif caminho_arquivo.lower().endswith((".png", ".jpg", ".jpeg", ".webp")):
         texto = extrair_texto_imagem(caminho_arquivo)
     
     else:
