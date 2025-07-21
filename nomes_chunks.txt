@@ -452,19 +452,9 @@ CÓDIGO DE OBRAS.txt_chunk450
 CÓDIGO DE OBRAS.txt_chunk451
 CÓDIGO DE OBRAS.txt_chunk452
 CÓDIGO DE OBRAS.txt_chunk453
-CÓDIGO DE OBRAS.txt_chunk454
-CÓDIGO DE OBRAS.txt_chunk455
-CÓDIGO DE OBRAS.txt_chunk456
-CÓDIGO DE OBRAS.txt_chunk457
-CÓDIGO DE OBRAS.txt_chunk458
-CÓDIGO DE OBRAS.txt_chunk459
-CÓDIGO DE OBRAS.txt_chunk460
-CÓDIGO DE OBRAS.txt_chunk461
-CÓDIGO DE OBRAS.txt_chunk462
-CÓDIGO DE OBRAS.txt_chunk463
-CÓDIGO DE OBRAS.txt_chunk464
-CÓDIGO DE OBRAS.txt_chunk465
 tabela.txt_chunk0
 tabela.txt_chunk1
 tabela.txt_chunk2
 tabela.txt_chunk3
+tabela.txt_chunk4
+tabela.txt_chunk5
