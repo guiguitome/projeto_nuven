@@ -40,5 +40,5 @@ o projeto foi dividido nas seguintes etapas:
                 
 3. **Consulta (`consulta.py`)**
    - Recebe uma pergunta do usuário.
-   - Converte a pergunta em embedding e busca os chunks mais semelhantes.
+   - Converte a pergunta em embedding e busca os chunks mais semelhantes (recupera 5 para melhor contextualização).
    - Usa uma LLM (Flan-T5-Small) para gerar a resposta com base nos trechos encontrados.
