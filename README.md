@@ -3,16 +3,18 @@
 Este projeto implementa um pipeline completo para processamento de documentos (PDFs e imagens), realizando extração de texto via OCR (quando necessário), chunking, vetorização semântica, recuperação de informações baseada em similaridade vetorial e geração de respostas com uma LLM, com base nos documentos indexados.
 
 ## Estrutura de diretórios
+
+```
 projetonuven/
-├── entrada/              # PDFs e imagens originais
-├── saida/                # Textos extraídos (.txt)
-├── chunks/               # (opcional) onde serão gerados os pedaços de texto
-├── index_faiss.index     # Índice vetorial salvo
-├── nomes_chunks.txt      # Mapeamento nome do chunk
+├── entrada/ # PDFs e imagens originais
+├── saida/ # Textos extraídos (.txt)
+├── index_faiss.index # Índice vetorial salvo
+├── nomes_chunks.txt # Mapeamento nome do chunk
 ├── preprocess.py
 ├── indexacao.py
 ├── consulta.py
 └── README.md
+```
 
 ## Tecnologias utilizadas
 
