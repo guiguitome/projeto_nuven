@@ -1,4 +1,4 @@
-📚 Projeto: Indexação e Consulta Inteligente com LLM
+# Desafio técnico Laboratório Nuven - Desenvolvedor IA
 Este projeto implementa um pipeline de processamento de documentos (PDFs e imagens), extração de texto com OCR, vetorização semântica, indexação com FAISS e resposta automática a perguntas usando uma LLM (Flan-T5-small). O objetivo é permitir a consulta inteligente de conteúdos extraídos do Código de Obras de Eusébio, por meio de perguntas em linguagem natural.
 
 🧱 Estrutura do Projeto
